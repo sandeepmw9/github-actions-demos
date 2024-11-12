@@ -6,5 +6,10 @@ jobs:
     steps:
       - name: print greetings
         run: echo "hello world"
+      - name: testing multi-line shell commands
+        run: |
+          echo "this is line one"
+          echo "this is line two"
+          echo "this is line three"
       - name: print goodbye
         run: echo "see ya again - bye"
